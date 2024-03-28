@@ -11,7 +11,8 @@ def generate_usernames(name):
         first_name + '.' + last_name,
         first_name[0] + '.' + last_name,
         first_name + '_' + last_name,
-        first_name[0] + '_' + last_name
+        first_name[0] + '_' + last_name,
+        first_name[0] + last_name  # New variation style
     ]
 
     return variations
@@ -42,6 +43,7 @@ def main():
     print("| first-name-initial.last-name | r.hilton          |")
     print("| first-name_last-name         | robert_hilton     |")
     print("| first-name-initial_last-name | r_hilton          |")
+    print("| first-letter-last-name       | rhilton           |")
     print()
 
     usernames = []
